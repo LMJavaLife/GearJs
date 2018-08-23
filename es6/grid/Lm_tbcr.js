@@ -1,4 +1,4 @@
-import $ from './jquery-vendor';
+import $ from '../jquery-vendor';
 import Lm_td from './Lm_td';
 import Lm_tr from './Lm_tr';
 import Lm_tb from './Lm_tb';
@@ -60,7 +60,6 @@ class Lm_tbcr{
 	createTb(data){
 		let tbOpts = {attr:{class:'lmtb'}}
 		Object.assign(tbOpts.attr,this.opts);
-		debugger;
 		const lmtb = new Lm_tb(tbOpts);
 		let lmthead = this.createThead();
 		let lmtbody = this.createTbody(data);

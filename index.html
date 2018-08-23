@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>lmGrid</title>
+    <script type="text/javascript">
+    	function sendCode(){
+    		alert(123);
+    	}
+
+    </script>
 </head>
 <body>
-<div id='tb1' lmtype='lmTb' ajax="" x='1000px'>
+<!-- 验证码组件 -->
+<div id="ckcode" lmtype ="lmckcode" delay="5" click="sendCode()" ></div>
+<!-- <div id='tb1' lmtype='lmTb' x='1000px'>
 	<div name="col1" caption="第一列" x="10px"></div>
 	<div name="col2" caption="第二列" x="20px"></div>
 	<div name="col3" caption="第三列" defval="1"></div>
@@ -16,12 +24,12 @@
 	<div name="col2" caption="第二列"></div>
 	<div name="col3" caption="第三列"></div>
 	<div name="col4" caption="第四列"></div>
-</div>
+</div> -->
 <script src="bundle.js"></script>
 <script type="text/javascript">
-	debugger;
-	let tableData = {trs:[{tds:{col1:'1_1',col2:'1_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}}]};
-	$.getLmWidget('tb1').setData(tableData);
+	// debugger;
+	// let tableData = {trs:[{tds:{col1:'1_1',col2:'1_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}},{tds:{col1:'2_1',col2:'2_2'}}]};
+	// $.getLmWidget('tb1').setData(tableData);
 </script>
 </body>
 </html>
